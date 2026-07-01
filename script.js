@@ -1,30 +1,3 @@
-const menu = document.getElementById("nav-links");
-
-const openBtn = document.getElementById("menu-toggle");
-
-const closeBtn = document.getElementById("close-menu");
-
-openBtn.addEventListener("click",()=>{
-
-    menu.classList.add("active");
-
-});
-
-closeBtn.addEventListener("click",()=>{
-
-    menu.classList.remove("active");
-
-});
-
-document.querySelectorAll("#nav-links a").forEach(link=>{
-
-    link.addEventListener("click",()=>{
-
-        menu.classList.remove("active");
-
-    });
-
-});
 // Smooth scrolling for navigation links
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', function(e) {
